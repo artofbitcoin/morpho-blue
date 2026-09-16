@@ -1,3 +1,7 @@
+# Parcours français
+
+Ce fork propose un parcours documentaire en français consacré à la primitive de prêt Morpho Blue. Le sommaire et les chapitres sont disponibles dans [docs/fr/](./docs/fr/).
+
 # Morpho Blue
 
 Morpho Blue is a non-custodial lending protocol implemented for the Ethereum Virtual Machine.
@@ -13,15 +17,7 @@ The protocol is described in detail in the [Morpho Blue Whitepaper](./morpho-blu
 
 ## Repository Structure
 
-[`Morpho.sol`](./src/Morpho.sol) contains most of the source code of the core contract of Morpho Blue.
-It solely relies on internal libraries in the [`src/libraries`](./src/libraries) subdirectory.
-
-Libraries in the [`src/libraries/periphery`](./src/libraries/periphery) directory are not used by Morpho Blue.
-They are useful helpers that integrators can reuse or adapt to their own needs.
-
-The [`src/mocks`](./src/mocks) directory contains contracts designed exclusively for testing.
-
-You'll find relevant comments in [`IMorpho.sol`](./src/interfaces/IMorpho.sol), notably a list of requirements about market dependencies.
+Morpho.sol contains most of the source code of the core contract of Morpho Blue. It solely relies on internal libraries in the src/libraries subdirectory. Libraries in src/libraries/periphery are reusable helpers for integrators. The src/mocks directory contains contracts designed exclusively for testing. Relevant requirements about market dependencies are documented in IMorpho.sol.
 
 ## Developers
 
@@ -33,5 +29,4 @@ All audits are stored in the [audits](./audits/) folder.
 
 ## License
 
-Files in this repository are publicly available under license `GPL-2.0-or-later`, see [`LICENSE`](./LICENSE).
-The previous license (BUSL-1.1) can be found [here](https://github.com/morpho-org/morpho-blue/blob/1bcfbfdfa284597ae526d082dd34bcd182d15d27/LICENSE) for reference.
+Files in this repository are publicly available under license GPL-2.0-or-later, see [LICENSE](./LICENSE).
